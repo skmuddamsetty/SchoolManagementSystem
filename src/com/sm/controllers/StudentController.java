@@ -7,21 +7,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.sm.dao.StudentDAO;
 import com.sm.entities.Student;
+import com.sm.services.StudentService;
 
 @Controller
 @RequestMapping("/students")
 public class StudentController {
 
 	@Autowired
-	private StudentDAO studentDAO;
+	private StudentService studentService;
 	
 	@RequestMapping("/studentsList")
 	public String getListofStudents(Model model){
 		
 		//get students from dao
-		List<Student> students = studentDAO.getStudents();
+		List<Student> students = studentService.getStudents();
 		//add students to the spring model class
 		model.addAttribute("students",students);
 		return "StudentsList";

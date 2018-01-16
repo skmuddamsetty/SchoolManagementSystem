@@ -11,8 +11,9 @@
 <title>Students List</title>
 </head>
 <body>
+<jsp:include page="NavBar.jsp"></jsp:include>
 <div class="container">
-  <h2>Students List</h2>           
+	<h2>Students List</h2>           
   <table class="table">
     <thead>
       <tr>

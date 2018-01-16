@@ -10,7 +10,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.sm.entities.Student;
 
@@ -28,7 +27,6 @@ public class StudentDAOImpl implements StudentDAO {
 	 * @see com.sm.dao.StudentDAO#getStudents()
 	 */
 	@Override
-	@Transactional
 	public List<Student> getStudents() {
 		
 		//get current hibernate session
