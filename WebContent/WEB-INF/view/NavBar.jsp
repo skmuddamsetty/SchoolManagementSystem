@@ -18,7 +18,7 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="/SchoolManagementSystem">Home</a></li>
       <li><a href="/SchoolManagementSystem/students/studentsList">Students List</a></li>
-      <li><a href="#">Page 2</a></li>
+      <li><a href="/SchoolManagementSystem/students/addStudent">Add Student</a></li>
       <li><a href="#">Page 3</a></li>
     </ul>
   </div>

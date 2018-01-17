@@ -26,4 +26,9 @@ public class StudentController {
 		model.addAttribute("students",students);
 		return "StudentsList";
 	}
+	
+	@RequestMapping("/addStudent")
+	public String addStudent(){
+		return "AddStudent";
+	}
 }
